@@ -1,0 +1,116 @@
+* {
+  --primary-font-family: Montserrat;
+  --seconadary-font-family: Fraunces;
+  --green-color: #3c8067;
+  --p-color: #6c7289;
+}
+body {
+  background-color: #f2ebe3;
+}
+.card {
+  background-color: whitesmoke;
+  width: 600px;
+  height: 550px;
+  display: flex;
+  margin: 50px auto;
+  border-radius: 15px;
+}
+.card .mob{
+    display: none;
+}
+.card .image .desk {
+  width: 300px;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.card .content {
+  padding: 40px;
+}
+.card .content h2 {
+  margin-top: 2px;
+  margin-bottom: 40px;
+  margin-left: -8px;
+  font-family: var(--primary-font-family);
+  font-size: 16px;
+  color: #6c7289;
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+.card .content h1 {
+  font-size: 32px;
+  font-family: var(--seconadary-font-family);
+  color: #1c232b;
+}
+.card .content p {
+  font-family: var(--primary-font-family);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: var(--p-color);
+  font-weight: 400px;
+}
+.price {
+  font-family: var(--seconadary-font-family);
+  color: var(--green-color);
+  display: flex;
+  margin-top: -40px;
+}
+.price .original {
+  margin-right: 20px;
+  color: var(--green-color);
+  font-family: var(--seconadary-font-family);
+  font-size: 32px;
+}
+del {
+  margin-top: 10px;
+  color: var(--p-color);
+}
+button {
+  padding: 15px 55px;
+  border-radius: 12px;
+  background-color: var(--green-color);
+  border: #3c8067 5px solid;
+  color: #ffffff;
+  font-family: var(--secondary-font-family);
+  font-size: 14px;
+   
+}
+button i {
+  margin-right: 5px;
+}
+button:hover {
+  background-color: #23503f;
+  border: #23503f 5px solid;
+}
+/* start card media */
+@media (max-width: 375px) {
+  .card {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+   .card .desk{
+    display: none;
+   }
+   .card .mob{
+    display: block;
+    width:100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+   }
+  button{
+    padding: 12px 88px;
+     margin: auto;
+      
+  }
+  .card .content p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  .card .content h1{
+    line-height: 1 ;
+  }
+}
+/* end card media */
